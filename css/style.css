@@ -1,0 +1,610 @@
+
+/*=========================
+      start navbar
+============================*/
+.nav{
+    position: relative;
+    z-index: 2;
+    color: #ddd;
+}
+
+.nav .logo h1{
+    font-weight: bold;
+    color: #921d1d;
+    font-size: 45px;
+    letter-spacing: 7px;
+    margin-top: 10px;
+
+}
+.nav .right {
+    text-align: right;
+}
+.nav .right ul{
+    margin-top: 22px;
+}
+.nav .right ul li {
+    text-align: right;
+    margin-right: 28px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+.nav .right ul li::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    top: 30px;
+    left: 0;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+.nav .right ul li:hover::before {
+    width: 50px;
+}
+
+@media(max-width:768px){
+    .nav .right{
+display:none;
+    }
+}
+
+
+@media(max-width:768px){
+    .nav .right ul li{
+display:block;
+padding:10px 0;
+text-align: left;
+border:none;
+    }
+}
+
+.nav .right a{
+    color: #921d1d;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+.nav .right a:hover{
+text-decoration:none;
+color: #fff;
+
+}
+
+.head-logo {
+position: relative;
+}
+
+.head-logo i{
+    display:none;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    padding: 7px 10px;
+    border: 1px solid #871615;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .head-logo i {
+        display: inline-block;
+
+    }
+}
+
+/*=========================
+      end navbar
+============================*/
+
+/*=========================
+      start header
+============================*/
+.header{
+    background:url('../images/bg-home.jpg'); 
+    background-size: cover;
+}
+
+
+.header .overlay{
+    position: absolute;
+    background: rgba(0,0,0,.8);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+      z-index: 1;
+}
+.header .first-home {
+    text-align:center;
+    font-weight:bold;
+    color:white;
+    padding-top: 150px;
+    margin: 0 20px;
+
+}
+@media(min-width:375px)and(max-width:768px){
+    .header .first-home{
+    padding-top: 50px;
+    }
+}
+.header .first-home h2{
+    font-size:40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+.header .first-home span{
+    color:#921d1d;
+
+    font-weight: bold;
+}
+.header .first-home .btn {
+    border-radius: 20px;
+    margin-top:50px;
+    background-color: transparent;
+    padding: 5px 20px;
+   font-weight: bold;
+}
+.header .first-home .btn:hover{
+    background-color:#921d1d;
+
+}
+@media(max-width:375px){
+    .header .first-home {
+        padding-top: 50px;
+    }
+}
+/*=========================
+      end header
+============================*/
+
+
+/*=========================
+      start section about
+============================*/
+.about{
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: #eee;
+    color:#921d1d;
+
+}
+
+.about  p{
+    font-size: 16px;
+    margin-top: 20px;
+    color:black;
+}
+
+/*=========================
+      end section about 
+============================*/
+
+
+
+/*=========================
+      start section speakers
+============================*/
+.speakers { padding: 50px 0px;}
+.speakers h2{
+    text-transform: uppercase;
+    color:#921d1d;
+    font-weight: bold;
+    font-size: 35px;
+}
+.speakers p{
+    color:grey;
+    margin-bottom:50px;
+}
+.speakers .speaker{
+    overflow: hidden;
+    position :relative;
+    margin-bottom: 30px;
+}
+.speakers .speaker img{
+    width: 100%;
+    height: 100%;
+}
+.speakers .speaker .details{
+width:100%;
+ background-color:rgba(0,0,0,.5);
+color:white;
+position: absolute;
+left:0px;
+bottom:-50px;
+text-align: center;
+padding-top: 10px;
+-webkit-transition:all .7s ease-in-out;
+-moz-transition:all .7s ease-in-out;
+-o-transition:all .7s ease-in-out;
+transition:all .7s ease-in-out;
+}
+.speakers .speaker .details p{
+    color:#cec8c8c7;
+    margin-bottom: 20px;
+}
+.speakers .speaker .details .social-icons{
+    height:45px;
+}
+.speakers .speaker .details a {
+    color:#fff;
+}
+.speakers .speaker:hover h3 , 
+.speakers .speaker:hover .social-icons a {
+    color:#921d1d;
+    -webkit-transition:all .7s ease-in-out;
+    -moz-transition:all .7s ease-in-out;
+    -o-transition:all .7s ease-in-out;
+    transition:all .7s ease-in-out;
+}
+  .speakers .speaker:hover .details {
+    bottom: 0px;
+  }
+  
+/*=========================
+      end section speakers
+============================*/
+
+
+/*=========================
+ start section scheduale 
+============================*/
+.scheduale{
+    padding:50px 0;
+    background-color: #fff;
+}
+.scheduale h2{
+    color:#921d1d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.scheduale h2::before{
+    position: absolute;
+    content:'';
+    top:100px;
+    width:100px;
+    height: 5px;
+    left:calc(50% - 50px);
+    background-color: #921d1d;
+     }
+.scheduale .para{
+    color:grey;
+    margin-bottom: 3rem;
+}
+.scheduale .row {padding-top:30px;}
+.scheduale .nav-item{
+    margin: auto;
+    padding:0px 20px;
+    background-color: #921d1d;
+    color: #fff;
+    font-weight: bold;
+    border-radius:20px;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link ,
+.nav-pills .show > .nav-link a ,
+.nav-pills .show > .nav-link a:hover 
+{
+    color:#fff;
+    border-radius:20px;
+}
+.nav-pills .nav-link.active{
+    background-color: #fff;
+    color: blue;
+}
+.nav-pills .nav-link {
+color:#fff;
+}
+.scheduale .tab-pane{
+    margin-top:35px;
+    padding: 15px 60px;
+}
+.scheduale .tab-pane .time{
+font-weight: 400;
+color:grey;
+}
+.scheduale .tab-pane .row{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+.scheduale .tab-pane .row:hover{
+    background-color: #eee;
+    -webkit-transition:all .7s ease-in-out;
+    -moz-transition:all .7s ease-in-out;
+    -o-transition:all .7s ease-in-out;
+    transition:all .7s ease-in-out;
+}
+.scheduale .tab-pane .action{
+    text-align: left;
+}
+.scheduale .action .img-speaker{
+    width:60px;
+    height: 60px;
+   display:inline-block;
+    overflow: hidden; 
+    border-radius:50%;
+    margin: 0 15px 0 0;
+}
+.scheduale .action .img-speaker img{
+    height: 100%;
+}
+@media(min-width:360px) and (max-width:991px){
+    .scheduale .tab-pane .action p{
+margin-left: 45px;
+padding-left: 30px;  
+  }
+}
+
+/*=========================
+ end section scheduale
+============================*/
+
+/*=========================
+ start section hotel
+============================*/
+.hotel {
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color: #eee;
+}
+.hotel h2{
+    color:#921d1d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hotel .hotel-details {
+    margin-top: 50px;
+    background-color: white;
+}
+@media(min-width:360px) and (max-width:1024px){
+    .hotel .hotel-details {
+
+        margin-top:20px;
+    }
+}
+.hotel .hotel-details:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.hotel .hotel-details .top{
+    overflow: hidden;
+}
+.hotel .hotel-details .top img{
+    transition: 0.3s ease-in-out;
+}
+.hotel .hotel-details .bottom{
+    text-align: left;
+padding-left: 10px;
+padding-bottom: 10px;
+}
+.hotel .hotel-details .bottom h5{
+    color:#921d1d;
+    margin-top: 10px;
+}
+.hotel .hotel-details .bottom ul li{
+display: inline-block;
+    color:yellow;
+    margin: 0px;
+}
+.hotel .hotel-details .bottom p{
+    font-size: 15px;
+}
+/*=========================
+ end section hotel
+============================*/
+
+
+/*=========================
+ start section about-us
+============================*/
+.contact-us{
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color: #0d0d2d;
+    color:white;
+}
+
+.contact-us h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-us  p{
+    font-size:16px;
+}
+.contact-us .second button{
+    padding: 7px 20px;
+    background-color: #921d1d;
+    color:#fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    margin-left: -25px;
+}
+.contact-us .second button:hover{
+    background-color: #fff;
+    color:#921d1d;
+    -webkit-transition:all .7s ease-in-out;
+    -moz-transition:all .7s ease-in-out;
+    -o-transition:all .7s ease-in-out;
+    transition:all .7s ease-in-out;
+}
+@media(max-width:375px){
+    .contact-us .second button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+.contact-us .second .social{
+    margin-top: 40px;
+}
+@media(min-width:360px) and (max-width:991px){
+    .contact-us .second .social{
+
+        margin: 30px 0px;
+    }
+}
+.contact-us .second .social a{
+    margin-right: 10px;
+    font-size:25px;
+    color: white;
+    background-color: transparent;
+    padding:10px;
+    border-radius:50%;
+}
+.contact-us .second .social a:hover{
+    color:#921d1d;
+    background-color: white;
+    -webkit-transition:all .7s ease-in-out;
+    -moz-transition:all .7s ease-in-out;
+    -o-transition:all .7s ease-in-out;
+    transition:all .7s ease-in-out;
+}
+.contact-us .third h5{
+    margin-bottom: 0;
+}
+
+/*=========================
+ end section contact-us
+============================*//* 
+
+/*=========================
+ start section footer
+============================*/
+.footer{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: black;
+    color:white;
+    text-align: center;
+     }
+.footer .copy span{
+    font-weight: bold;
+    color:#921d1d;
+}
+/*=========================
+ end section footer
+============================*/
+
+/*=========================
+ start section FAQ
+============================*/
+.faq {padding:60px 0;}
+.faq h2{
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#921d1d;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 10px;
+    position: relative;
+}
+.faq h2::before{
+position: absolute;
+content:'';
+top: 60px;
+    width: 70px;
+    height: 5px;
+    left: calc(50% - 45px);
+    background-color: #921d1d;
+ }
+.faq .faq-list{
+ padding:0;
+ }
+.faq #faq-list li{
+    border-bottom:1px solid #ddd;
+}
+.faq #faq-list a{
+    padding:18px 0;
+    display: block;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-right:20px;
+}
+.faq #faq-list a:hover{
+    text-decoration: none;
+    color: #921d1d;
+}
+.faq #faq-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 16px;
+  }
+  .faq #faq-list p {
+    margin-bottom: 20px;
+  }
+  .faq #faq-list a.collapse {
+    color: #f82249;
+  }
+  .faq #faq-list a.collapsed {
+    color: #000;
+  }
+  .faq #faq-list a.collapsed:hover {
+    color: #921d1d;
+    background-color:#eee;
+    }
+    .faq #faq-list a.collapsed i::before {
+    content: "\f055" !important;
+     }
+  
+/*=========================
+ end section FAQ
+============================*/
+
+
+/*=========================
+/* scroll up 
+============================*/
+.scroll-up {
+    background-color:#921d1d;
+    color:white;
+    text-align: center;
+    position:fixed;
+    height:40px;
+    width:40px;
+    line-height: 45px;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    display:none;
+}
+
+.scroll-up i{
+    font-size:25px;
+}
+.scroll-up:hover
+{
+    opacity:.7;
+    line-height: 40px;
+    background-color:white;
+    color:#921d1d;  
+      border:3px solid #921d1d;
+   z-index:9999;
+    cursor: pointer;
+    -webkit-transition:all .7s ease-in-out;
+-moz-transition:all .7s ease-in-out;
+-o-transition:all .7s ease-in-out;
+transition:all .7s ease-in-out;
+}
+
+/* end scroll up */
